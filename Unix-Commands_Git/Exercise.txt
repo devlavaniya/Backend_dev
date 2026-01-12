@@ -1,0 +1,90 @@
+Exercise 1:  Basic Git Workflow
+
+1. mkdir my-project
+cd my-project
+git init
+2. echo "# My Project" > README.md
+3. git add README.md
+git commit -m "Add README file"
+4.echo "This is my first project." >> README.md
+git add README.md
+git commit -m "Update README with description"
+5.git log
+
+
+Exercise 2: Branching and Merging
+
+1.git branch feature
+git checkout feature
+2.echo "Feature file" > feature.txt
+git add feature.txt
+git commit -m "Add feature file"
+3.git checkout main
+4.git merge feature
+5.git branch -d feature
+
+Exercise 3: Conflict Resolution
+
+1.git checkout -b branchA
+git checkout main
+git checkout -b branchB
+git checkout branchA
+
+2. echo "Change from branchA" >> README.md
+git add README.md
+git commit -m "Edit in branchA"
+git checkout main
+
+3. git merge branchA
+
+4. git checkout branchB
+echo "Change from branchB" >> README.md
+git add README.md
+git commit -m "Edit in branchB"
+git checkout main
+git merge branchB
+
+# resolve conflict manually
+5.git add README.md
+git commit -m "Resolve merge conflict"
+
+
+Exercise 4: GitHub Collaboration
+
+1. git clone repo-link
+
+2. cd sample-repo
+
+3. git checkout -b my-feature
+
+4.echo "Collaboration test" > collab.txt
+git add collab.txt
+git commit -m "Add collaboration test file"
+
+5. git push origin my-feature
+
+Exercise 5: Advanced Workflow
+
+1. mkdir advanced-repo
+cd advanced-repo
+git init
+echo "File A" > a.txt
+echo "File B" > b.txt
+git add .
+git commit -m "Initial commit with multiple files"
+
+2. echo "all" > .gitignore
+git add .gitignore
+git commit -m "Add gitignore file"
+echo "Temporary work" >> a.txt
+
+3.git stash
+git stash pop
+
+4.git tag -a v1.0 -m "First release"
+git remote add origin https://github.com/your-username/advanced-repo.git
+5.git push origin main --tags
+
+
+
+
