@@ -1,0 +1,80 @@
+let user=[
+    {
+        id:1,
+        name:"Jagdish",
+        age:21,
+        Gender:"Male",
+        course:"Btech CSE"
+    },
+    {
+        id:11,
+        name:"Rani",
+        age:21,
+        Gender:"Female",
+        course:"Btech CSE"
+
+    },
+    {
+        id:2,
+        name:"Rajesh",
+        age:22,
+        Gender:"Male",
+        course:"Btech ECE"
+    },
+    {
+        id:3,
+        name:"Ravi",
+        age:20,
+        Gender:"Male",
+        course:"Btech ME"   
+    },
+    {
+        id:4,
+        name:"Amit",
+        age:23,
+        Gender:"Male",
+        course:"Btech CE"       
+    },
+    {
+        id:5,
+        name:"Ankit",
+        age:21,
+        Gender:"Male",
+    }
+    ,
+    {
+        id:6,
+        name:"sumit",
+        age:22,
+        Gender:"Male",
+    }
+    ,
+    {
+        id:7,
+        name:"rahul",
+        age:21,
+        Gender:"Male",
+    }
+    ,
+    {
+        id:8,
+        name:"rakesh",
+        age:21,
+        Gender:"Male",
+    }
+    ,
+    {
+        id:9,
+        name:"suresh",
+        age:21,
+        Gender:"Male",
+    }
+    ,
+    {
+        id:10,
+        name:"mahesh",
+        age:21,
+        Gender:"Male",
+    }
+]
+module.exports=user;
